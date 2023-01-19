@@ -1,0 +1,154 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+
+    padding: 0;
+    margin: 0;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    flex-direction: column;
+
+    background: #2980B9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    height: 100vh;
+}
+
+h1 {
+    margin-bottom: 1em;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.table1,
+.table2,
+.table3 {
+    background-color: red;
+    width: 300px;
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    box-shadow: 7px 7px 0px -1px rgba(0,0,0,0.1);
+    position: relative;
+
+    margin: 1.5em;
+}
+
+button {
+    font-size: 25px;
+    padding: .5em;
+    margin: .5em;
+
+    background-color: #fff;
+
+    border: none;
+
+    border-radius: 25px;
+    font-weight: bold;
+
+    color: red;
+}
+
+.table2 {
+    background-color: rgb(96, 96, 194);
+}
+
+.table2 button {
+    color: rgb(96, 96, 194);
+}
+
+.table2 .free {
+    border-color: rgb(96, 96, 194);
+}
+
+.table3 {
+    background-color: green;
+}
+
+.table3 .free {
+    border-color: green;
+}
+
+.table3 button {
+    color: green;
+}
+
+.h {
+    height: 80px;
+}
+
+.free {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 1em;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 1em .7em;
+    border: 15px solid red;
+
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.basic {
+    position: absolute;
+    color: #fff;
+    font-size: 2em;
+    font-weight: bold;
+    top: -12px;
+    right: 25px;
+}
+
+.main {
+    width: 100%;
+    background-color: #fff;
+    padding-top: 5em;
+    padding-bottom: .5em;
+    text-align: left;
+}
+
+.check:nth-child(1) {
+    margin-bottom: 2em;
+}
+
+.check {
+    margin: 0;
+    padding: .5em 1em;
+}
+
+.check:nth-child(even) {
+    background-color: #ededed;
+}
+
+@media screen and (max-width: 550px) {
+
+    body {
+        height: auto;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+}
+
